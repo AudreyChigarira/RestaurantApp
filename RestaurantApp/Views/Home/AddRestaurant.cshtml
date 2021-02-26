@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "Add Your Favorite Restaurant";
+}
+
+@model RestaurantApp.Models.AddRestaurant
+
+
+    <link href="~/css/input.css" rel="stylesheet" />
+
+    <form asp-action="AddRestaurant" method="post" id="form">
+
+        <div class="text-center">
+            <label asp-for="Name"> Enter Your Name: </label>
+            <input asp-for="Name" placeholder="Your name..." />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="text-center">
+            <label asp-for="ResName"> Enter a Restaurant Name: </label>
+            <input asp-for="ResName" placeholder="Restaurant name..." />
+            <span asp-validation-for="ResName" class="text-danger"></span>
+        </div>
+
+        <div class="text-center">
+            <label asp-for="Dish"> Enter Your Favorite Dish: </label>
+            <input asp-for="Dish" placeholder="Favorite dish..." />
+            <span asp-validation-for="Dish" class="text-danger"></span>
+        </div>
+
+        <div class="text-center">
+            <label asp-for="RestaurantPhone"> Enter The Restaurant's Phone Number: </label>
+            <input asp-for="RestaurantPhone" placeholder="9 digit number..." />
+            <span asp-validation-for="RestaurantPhone" class="text-danger"></span>
+
+           
+        </div>
+
+        <div class=" text-center">
+            <button type="submit">Add Restaurant!</button>
+        </div>
+    </form>
+
+    <div class="text-center">
+        <a class="btn btn-primary" asp-action="Index">Back to homepage</a>
+
+    </div>
+
+    <div class="text-center">
+        <a class="btn btn-primary" asp-action="ViewRestaurant">View Your Restaurants</a>
+    </div>
+
+
+
+
+
+
+

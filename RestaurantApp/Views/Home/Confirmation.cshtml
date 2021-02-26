@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Restaurant Added! Thank you.";
+}
+
+@model RestaurantApp.Models.AddRestaurant
+
+    <div class="text-center">
+        <h4>
+            Congratulations! We've added the restaurant to your list! Please click on the link below to view your list.
+        </h4>
+    </div>
+<br />
+    <div class="text-center">
+
+        <img src="https://i.gifer.com/B02q.gif" width="600" />
+    </div>
+    <br />
+    <br />
+
+    <div class="text-center">
+        <a class="btn btn-primary" asp-action="ViewRestaurant">View Your Restaurants</a>
+    </div>
